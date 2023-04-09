@@ -1,0 +1,40 @@
+my-project/
+├── server/
+│   ├── api/
+│   │   ├── routes/
+│   │   │   ├── api.js
+│   │   │   └── index.js
+│   │   └── controllers/
+│   │       └── apiController.js
+│   ├── config/
+│   │   ├── index.js
+│   │   └── firebaseConfig.js
+│   ├── middleware/
+│   │   ├── auth.js
+│   │   └── index.js
+│   ├── models/
+│   │   ├── user.js
+│   │   └── index.js
+│   ├── utils/
+│   │   ├── firebase.js
+│   │   └── index.js
+│   ├── app.js
+│   ├── package.json
+│   └── yarn.lock
+└── client/
+    ├── public/
+    │   ├── index.html
+    │   └── favicon.ico
+    ├── src/
+    │   ├── components/
+    │   │   ├── App.js
+    │   │   ├── Home.js
+    │   │   └── About.js
+    │   ├── styles/
+    │   │   ├── App.css
+    │   │   ├── Home.css
+    │   │   └── About.css
+    │   ├── index.js
+    │   └── serviceWorker.js
+    ├── package.json
+    └── yarn.lock
