@@ -15,31 +15,30 @@
   border-radius: 0.25rem;
   transition: all 0.15s ease-in-out;
   background-color: var(--primary-color);
-  color: var(--white);
+  color: var(--light-color);
   position:static;
 }
 
 .button:hover {
-  background-color: var(--primary-color);
-  color: var(--white);
+  background-color: var(--primary-color-active);
+  color: var(--light-color);
   outline: 2px solid var(--primary-color-active);
   cursor: pointer;
 }
 
-
 .button:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color-active);
 }
 
 .button:active {
   background-color: var(--secondary-color);
-  color: var(--white);
+  color: var(--light-color);
   border-color: var(--secondary-color);
 }
 
 .button.clicked {
   background-color: var(--primary-color-active);
   border-color: var(--primary-color);
-  color: var(--white);
+  color: var(--light-color);
 }

@@ -1,18 +1,17 @@
 :root {
-  --primary-color: #3F51B5;
-  --primary-color-active: #303F9F;
-  --secondary-color: #F44336;
+  --primary-color: #2b2d42;
+  --primary-color-transluscent: #2b2d4275;
+  --primary-color-active: #3e3f5a;
+  --secondary-color: #4d5d74;
+  --secondary-color-transluscent: #9ac2ff00;
   --success-color: #4CAF50;
-  --danger-color: #FF5722;
-  --warning-color: #FF9800;
-  --info-color: #2196F3;
-  --light-color: #ECEFF1;
-  --dark-color: #263238;
+  --danger-color: #42527da4;
+  --warning-color: #FFC107;
+  --info-color: #73c1b6;
+  --light-color: #f1f1f1;
+  --dark-color: #1d1f2a;
 }
-
-
   
-  /* Define color classes */
   .primary {
     color: var(--primary-color);
   }

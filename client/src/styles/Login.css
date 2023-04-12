@@ -10,10 +10,10 @@
 
 .login-card {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.373);
+  background-color: var(--primary-color-transluscent);
   backdrop-filter: blur(10px);
   padding: 40px;
-  border-radius: 80px;
+  border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   max-width: 400px;
   width: 100%;
@@ -29,13 +29,16 @@ label {
   font-weight: 500;
 }
 
+.horizontal-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin:auto;
+}
+
 input::placeholder {
   color: #e5e5e5;
 }
-
-
-
-
 
 button {
   margin-top: 50px;

@@ -6,9 +6,8 @@
 }
 
 .input-field {
-  background-color: #0000006d;
+  background-color: var(--secondary-color-transluscent)
 }
-
 
 .input-label {
   margin-bottom: 0.25rem;
@@ -23,11 +22,12 @@
   border: 2px solid var(--dark-color);
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  color: rgba(0, 0, 0, 0);
+  color: var(--light-color)
 }
 
 .input-field:hover {
-  border-color: var(--primary-color);
+  border-color: var(--danger-color);
+  background-color: var(--primary-color-active);
 }
 
 .input-field:focus {

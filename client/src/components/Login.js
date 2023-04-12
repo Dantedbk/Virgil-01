@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Input from '../components/common/txtInput';
 import Button from '../components/common/Button';
 import '../styles/Login.css';
+
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -10,19 +11,17 @@ function Login() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [loginSuccess, setLoginSuccess] = useState(null);
 
-
   const handleSubmit = (event) => {
     if (event) {
       event.preventDefault();
     }
     setIsSubmitting(true);
-    // Mock login API call
     setTimeout(() => {
       if (email === 'test@example.com' && password === 'password') {
         setLoginSuccess(true);
       } else {
         setIsSubmitting(false);
-        setLoginSuccess(false); // moved to here
+        setLoginSuccess(false); 
       }
     }, 2000);
   };
@@ -41,7 +40,6 @@ function Login() {
     <div className="login-container">
       <div className="card login-card">
         <form className="login-form" onSubmit={handleSubmit}>
-          <h1 className="login-title">Login</h1>
           <Input
             id="email"
             label="Email"
@@ -64,14 +62,19 @@ function Login() {
           {loginSuccess === false && !isSubmitting && (
             <div className="login-error"></div>
           )}
-          <Button 
-            animate 
-            className="conditional login-button" 
-            onClick={handleSubmit} 
+          <Button
+            animate
+            className="conditional login-button"
+            onClick={handleSubmit}
             disabled={!isValidEmail || !isValidPassword || isSubmitting}
           >
-            Log in
+            Ingresar
           </Button>
+          <div className="horizontal-buttons-container">
+            <Button className="secondary-button">Recuperar Contraseña</Button>
+            <div className="horizontal-space" style={{width:'200px'}}></div>
+            <Button className="secondary-button">Registrarse</Button>
+          </div>
         </form>
       </div>
     </div>

@@ -4,7 +4,6 @@ const { firebaseConfig } = require('../config/firebaseConfig');
 
 initializeApp(firebaseConfig);
 
-// Create
 const create = async (req, res) => {
   try {
     const { name, email } = req.body;
@@ -23,7 +22,6 @@ const create = async (req, res) => {
   }
 };
 
-// Read
 const read = async (req, res) => {
   try {
     const usersRef = ref(getDatabase(), 'users');
@@ -38,7 +36,6 @@ const read = async (req, res) => {
   }
 };
 
-// Update
 const update = async (req, res) => {
   try {
     const { id, name, email } = req.body;
@@ -56,7 +53,6 @@ const update = async (req, res) => {
   }
 };
 
-// Delete
 const del = async (req, res) => {
   try {
     const { id } = req.params;

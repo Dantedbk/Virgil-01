@@ -71,7 +71,7 @@ const ParticlesComponent = () => {
               },
               particles: {
                 color: {
-                  value: ["#5bc0eb", "#fde74c", "#9bc53d", "#e55934", "#fa7921"],
+                  value: ["#81A1C1", "#88C0D0", "#8FBCBB", "#E5E9F0", "#D8DEE9"],
                 },
               },
             },
@@ -88,7 +88,7 @@ const ParticlesComponent = () => {
               },
               particles: {
                 color: {
-                  value: ["#004f74", "#5f5800", "#245100", "#7d0000", "#810c00"],
+                  value: ["#3b4252", "#434c5e", "#4c566a", "#5e81ac", "#81a1c1"],
                 },
               },
             },
