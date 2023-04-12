@@ -1,29 +1,28 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './styles/_buttons.css';
+import React, { useState } from 'react';
+import './styles/objects/_button.css';
+import 'animate.css/animate.min.css';
 
-const Button = ({ children, onClick, variant, disabled }) => {
+function Button(props) {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(true);
+    if (props.onClick) {
+      props.onClick();
+    }
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 1000);
+  };
+
   return (
     <button
-      onClick={onClick}
-      className={`btn ${variant}${disabled ? ' disabled' : ''}`}
-      disabled={disabled}
+      className={`button animate__animated ${isClicked ? 'animate__shakeX' : 'animate__bounce'}`}
+      onClick={handleClick}
     >
-      {children}
+      {props.children}
     </button>
   );
-};
-
-Button.propTypes = {
-  children: PropTypes.node.isRequired,
-  onClick: PropTypes.func,
-  variant: PropTypes.oneOf(['primary', 'secondary']),
-  disabled: PropTypes.bool,
-};
-
-Button.defaultProps = {
-  variant: 'primary',
-  disabled: false,
-};
+}
 
 export default Button;

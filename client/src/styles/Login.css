@@ -1,0 +1,57 @@
+@import '../components/common/styles/_colors.css';
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--dark-color);
+}
+
+.login-card {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.373);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 80px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  min-height: 50%;
+  z-index: 1;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input::placeholder {
+  color: #e5e5e5;
+}
+
+
+
+
+
+button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  button {
+    background-color: #000000;
+    color: #f7f8ef;
+  }
+}

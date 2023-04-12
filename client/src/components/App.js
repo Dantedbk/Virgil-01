@@ -1,15 +1,13 @@
-import React from 'react';
-import Home from './Main';
-import About from './About';
+import ParticlesComponent from "./common/particles";
+import Login from "./Login"
 
-function App() {
+const App = () => {
   return (
     <div>
-      <h1>Welcome to my app</h1>
-      <Home />
-      <About />
+      <Login />
+      <ParticlesComponent />
     </div>
   );
-}
+};
 
 export default App;

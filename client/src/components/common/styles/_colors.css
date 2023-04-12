@@ -1,14 +1,16 @@
 :root {
-    /* Define your color variables here */
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --success-color: #28a745;
-    --danger-color: #dc3545;
-    --warning-color: #ffc107;
-    --info-color: #17a2b8;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-  }
+  --primary-color: #3F51B5;
+  --primary-color-active: #303F9F;
+  --secondary-color: #F44336;
+  --success-color: #4CAF50;
+  --danger-color: #FF5722;
+  --warning-color: #FF9800;
+  --info-color: #2196F3;
+  --light-color: #ECEFF1;
+  --dark-color: #263238;
+}
+
+
   
   /* Define color classes */
   .primary {

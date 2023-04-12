@@ -1,31 +1,45 @@
 @import '../_colors.css';
 
-.btn {
-    display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    transition: all 0.15s ease-in-out;
-    background-color: var(--primary-color);
-    color: var(--white);
-  }
-  
-  .btn:hover {
-    background-color: var(--primary-color-hover);
-    color: var(--white);
-    border-color: var(--primary-color-hover);
-  }
-  
-  .btn:active {
-    background-color: var(--primary-color-active);
-    color: var(--white);
-    border-color: var(--primary-color-active);
-  }
-  
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+  background-color: var(--primary-color);
+  color: var(--white);
+  position:static;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  outline: 2px solid var(--primary-color-active);
+  cursor: pointer;
+}
+
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.button:active {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-color: var(--secondary-color);
+}
+
+.button.clicked {
+  background-color: var(--primary-color-active);
+  border-color: var(--primary-color);
+  color: var(--white);
+}
